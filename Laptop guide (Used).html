@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Used Laptop Inspection Guide</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f4f7fb, #e8eef7);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0f172a, #2563eb);
+      color: white;
+      padding: 35px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+
+    .tool-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .tool-card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 18px;
+      transition: 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .tool-card a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+
+    .tool-card p {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .battery-box {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f1f5f9;
+      border-left: 5px solid #10b981;
+      border-radius: 10px;
+    }
+
+    .battery-box code {
+      background: #0f172a;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9rem;
+      background: #f8fafc;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Used Laptop Inspection Guide</h1>
+      <p>Essential tools to test hardware health before buying</p>
+    </div>
+
+    <div class="content">
+      <h2 class="section-title">Diagnostic Tools</h2>
+
+      <div class="tool-list">
+        <div class="tool-card">
+          <a href="https://www.techpowerup.com/download/techpowerup-gpu-z/" target="_blank">GPU-Z</a>
+          <p>Check GPU specifications, temperature, and VRAM details.</p>
+        </div>
+
+        <div class="tool-card">
+          <a href="https://www2.cpuid.com/downloads/cpu-z/cpu-z_2.17-en.exe" target="_blank">CPU-Z</a>
+          <p>Inspect processor, RAM, and motherboard information.</p>
+        </div>
+
+        <div class="tool-card">
+          <a href="https://sourceforge.net/projects/crystaldiskinfo/" target="_blank">CrystalDiskInfo</a>
+          <p>Analyze SSD/HDD health, temperature, and usage hours.</p>
+        </div>
+
+        <div class="tool-card">
+          <a href="https://dappcdn.com/download/utilities/hwinfo" target="_blank">HWiNFO</a>
+          <p>Advanced system monitoring for thermals and sensors.</p>
+        </div>
+
+        <div class="tool-card">
+          <a href="https://deadpixelbuddy.com/" target="_blank">Dead Pixel Buddy</a>
+          <p>Detect dead pixels and display issues.</p>
+        </div>
+
+        <div class="tool-card">
+          <a href="https://keyboardtester.uk/mouseTester.html" target="_blank">Trackpad Tester</a>
+          <p>Test trackpad responsiveness and gestures.</p>
+        </div>
+
+        <div class="tool-card">
+          <a href="https://en.key-test.ru/" target="_blank">Keyboard Tester</a>
+          <p>Verify all keyboard keys are functioning properly.</p>
+        </div>
+      </div>
+
+      <div class="battery-box">
+        <h3>Battery Health Check</h3>
+        <p>Run the following command in Command Prompt to generate a battery health report:</p>
+        <code>powercfg /batteryreport</code>
+      </div>
+    </div>
+
+    <div class="footer">
+      Professional Used Laptop Buying Toolkit by <i>Shahid Jr.</i>
+    </div>
+  </div>
+</body>
+</html>
